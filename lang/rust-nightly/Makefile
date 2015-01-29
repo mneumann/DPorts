@@ -36,7 +36,7 @@ ONLY_FOR_REASON=	requires prebuilt bootstrap compiler
 USES=		gmake perl5 python:2
 HAS_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-docs --mandir=${MANPREFIX}/man
-MAKE_ENV=	SNAPSHOT_FILE=	${DISTDIR}/${RUST_BOOT}
+MAKE_ENV=	SNAPSHOT_FILE=${DISTDIR}/${PORTNAME}/${RUST_BOOT}
 USE_LDCONFIG=	yes
 USE_PERL5=	build
 #MAKE_JOBS_UNSAFE=	yes
