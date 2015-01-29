@@ -1,0 +1,9 @@
+--- src/snapshots.txt.orig	2014-12-17 13:25:06 UTC
++++ src/snapshots.txt
+@@ -1,3 +1,6 @@
++S 2014-12-16 e77c54a
++  dragonfly-x86_64 2aea0362442839c64bc583cd559b07807cd7d5ce
++
+ S 2014-12-09 cafe296
+   freebsd-x86_64 f80b943b94747764282d1b54d861b600eadd224f
+   linux-i386 96b390dc7d0c38b7b60f04fc5a6565ecfa9cb977
