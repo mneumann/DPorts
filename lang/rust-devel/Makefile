@@ -1,7 +1,7 @@
 # Created by: Jyun-Yan You <jyyou@cs.nctu.edu.tw>
 # DragonFly port: Michael Neumann <mneumann@ntecs.de>
 
-PORTNAME=	rust-nightly
+PORTNAME=	rust-devel
 PORTVERSION=	1.0.0.20150128
 CATEGORIES=	lang
 MASTER_SITES=	http://www.ntecs.de/downloads/rust/:bootstrap \
