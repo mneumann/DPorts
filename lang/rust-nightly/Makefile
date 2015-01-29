@@ -39,6 +39,12 @@ CONFIGURE_ARGS=	--disable-docs --mandir=${MANPREFIX}/man
 MAKE_ENV=	SNAPSHOT_FILE=${DISTDIR}/${PORTNAME}/${RUST_BOOT}
 USE_LDCONFIG=	yes
 USE_PERL5=	build
-#MAKE_JOBS_UNSAFE=	yes
+
+post-build:
+	@${ECHO_MSG} "Please `make check` to run regression tests"
+
+check: build
+	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} \
+		${MAKE_CMD} ${_MAKE_JOBS} ${MAKE_ARGS} check
 
 .include <bsd.port.mk>
